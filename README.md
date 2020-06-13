@@ -51,3 +51,13 @@ Ionic CLI can build the frontend into static HTML/CSS/JavaScript files. These fi
 ionic build
 ```
 ***
+
+### Running CI and CD on Travis 
+1. login to travis and connect the wanted repo to travis .
+2. configure travis file as mentioned in travis file in udacity3project
+3. now you can start pushing your code from any source control to git and to be sure that all changes would be in builded .
+
+### Configuring docker 
+"just want to mention that i didnt attach AWS credentials anywhere , you have to configure them in your system variables whether systempath windows or root .profile ubuntu "
+
+#### building the images
