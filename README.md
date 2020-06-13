@@ -51,3 +51,35 @@ Ionic CLI can build the frontend into static HTML/CSS/JavaScript files. These fi
 ionic build
 ```
 ***
+
+### Running CI and CD on Travis 
+1. login to travis and connect the wanted repo to travis .
+2. configure travis file as mentioned in travis file in udacity3project
+3. now you can start pushing your code from any source control to git and to be sure that all changes would be in builded .
+
+### Configuring docker 
+"just want to mention that i didnt attach AWS credentials anywhere , you have to configure them in your system variables whether systempath windows or root .profile ubuntu "
+
+#### building the images
+we have 4 images we need to configure frontend , user , feed , reverseproxy , all of them would follow the same steps 
+go to each directory and run the following commands prepectively 
+
+udacity-c3-restapi-feed	
+```docker build -t aliahmednada/udacity-restapi-feed . ```
+
+udacity-c3-restapi-user	
+```docker build -t aliahmednada/udacity-restapi-user . ```
+
+udacity-c3-frontend	
+```docker build -t aliahmednada/udacity-frontend . ```
+
+udacity-c3-deployment	
+```docker build -t aliahmednada/reverseproxy . ```
+
+check Images after building 
+```docker images``` command 
+then delete any image incase you need 
+```docker image rm -f <image_name/ID>```
+```docker image prune```
+
+
