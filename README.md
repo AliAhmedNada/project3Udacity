@@ -64,17 +64,16 @@ ionic build
 we have 4 images we need to configure frontend , user , feed , reverseproxy , all of them would follow the same steps 
 go to each directory and run the following commands prepectively 
 
-```bash
-docker
-```
 udacity-c3-restapi-feed	
-**docker build -t aliahmednada/udacity-restapi-feed . **
+```docker build -t aliahmednada/udacity-restapi-feed . ```
 
 udacity-c3-restapi-user	
-**docker build -t aliahmednada/udacity-restapi-user . **
+```docker build -t aliahmednada/udacity-restapi-user . ```
 
 udacity-c3-frontend	
-**docker build -t aliahmednada/udacity-frontend . **
+```docker build -t aliahmednada/udacity-frontend . ```
 
+udacity-c3-deployment	
+```docker build -t aliahmednada/reverseproxy . ```
 
 
