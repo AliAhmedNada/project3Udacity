@@ -5,6 +5,9 @@ metadata:
     service: frontend
   name: frontend
 spec:
+  selector:
+    matchLabels:
+      service: frontend
   replicas: 2
   template:
     metadata:

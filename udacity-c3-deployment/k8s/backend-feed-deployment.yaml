@@ -5,6 +5,9 @@ metadata:
     service: backend-feed
   name: backend-feed
 spec:
+  selector:
+    matchLabels:
+      service: backend-feed
   replicas: 3
   template:
     metadata:

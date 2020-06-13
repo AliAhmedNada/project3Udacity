@@ -5,6 +5,9 @@ metadata:
     service: backend-user
   name: backend-user
 spec:
+  selector:
+    matchLabels:
+      service: backend-user
   replicas: 2
   template:
     metadata:
