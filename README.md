@@ -76,4 +76,10 @@ udacity-c3-frontend
 udacity-c3-deployment	
 ```docker build -t aliahmednada/reverseproxy . ```
 
+check Images after building 
+```docker images``` command 
+then delete any image incase you need 
+```docker image rm -f <image_name/ID>
+docker image prune```
+
 
